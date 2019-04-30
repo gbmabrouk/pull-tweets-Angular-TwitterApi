@@ -17,7 +17,7 @@ services:
       - QT_GRAPHICSSYSTEM=native
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
-    command: bash -c "ng serve --open"
+    command: bash -c "ng serve --host 0.0.0.0 && ng build"
 
   nodeJS:
     build:
@@ -28,8 +28,8 @@ services:
     image: myimage
     
     container_name: nodeJS
-    # ports:
-    # - "9090:9090"
+    ports:
+    - "3000:3000"
     stdin_open: true
     tty: true
     command: bash -c "node server"
