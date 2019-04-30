@@ -1,24 +1,27 @@
-## Trial Task
+# AllMyTwitterHome
 
-This trial consists of writing an angular app 7 from scratch. Feel free to expand on the proposal with your own ideas and functionalities.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
-## App Description
+## Development server
 
-Pull tweets from the Twitter public API and display them on a timeline.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Evaluation Criteria
+## Code scaffolding
 
-### Required
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-* The app functions as expected from the description. It is composed of multiple components, services and css classes.
+## Build
 
-### Additional
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-* Responsive Design
-* Layout: Clear and Interactive
-* some Unit Tests
+## Running unit tests
 
-### Bonus
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-* Provide a docker container which serves the app via docker-compose.
-* Configure a gitlab pipeline to run unit tests on commits
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
