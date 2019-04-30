@@ -1,0 +1,11 @@
+@media screen and (max-width: 767px) {
+  .main-container .header .branding {
+    display: none;
+  }
+
+  .header .header-actions .nav-link{
+    position: absolute !important;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

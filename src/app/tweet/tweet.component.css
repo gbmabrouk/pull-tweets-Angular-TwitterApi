@@ -1,0 +1,53 @@
+.card-header {
+  padding: 0;
+}
+.card-header .retweeted{
+  font-size: 0.5rem;
+  font-style: italic;
+}
+.card-header .card-header-actions{
+  float: right;
+}
+.card-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card-img {
+  grid-area: photo;
+  text-align: right;
+}
+.card-img img{
+  display: inline-block;
+  width: auto;
+  max-width: 300px;
+  max-height: 100px;
+}
+.card-text {
+  grid-area: text;
+  flex: 1;
+  min-width: 300px;
+}
+
+::ng-deep .modal-body{
+  text-align: center;
+}
+::ng-deep .modal-body img{
+  max-width: 100%;
+}
+::ng-deep .modal-footer{
+  padding: 0;
+  text-align: left;
+}
+@media screen and (max-width: 1024px) {
+  .card-header .card-header-actions {
+    float: none;
+    right: 0;
+    position: relative;
+    display: inline-block;
+    padding-left: 5px;
+  }
+  .card-text {
+    min-width: auto;
+  }
+}
