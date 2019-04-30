@@ -1,0 +1,38 @@
+version: "3"
+services:
+  angular:
+    build:
+      context: .
+      args:
+        - http_proxy=${http_proxy}
+        - https_proxy=${http_proxy}
+    image: myimage
+    container_name: angular
+    ports:
+    - "4200:4200"
+    stdin_open: true
+    tty: true
+    environment:
+      - DISPLAY=$DISPLAY
+      - QT_GRAPHICSSYSTEM=native
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    command: bash -c "ng serve --open"
+
+  nodeJS:
+    build:
+      context: .
+      args:
+        - http_proxy=${http_proxy}
+        - https_proxy=${http_proxy}
+    image: myimage
+    
+    container_name: nodeJS
+    # ports:
+    # - "9090:9090"
+    stdin_open: true
+    tty: true
+    command: bash -c "node server"
+    
+  
+ 

@@ -10,3 +10,6 @@ Run `node server` for NodeJS Client.
 
 Run `ng serve --open` for a dev server. (The app will automatically reload if you change any of the source files)
 
+## Docker
+
+Run `docker build . -t myimage` for build, and then `docker-compose up`
