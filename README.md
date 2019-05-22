@@ -12,5 +12,5 @@ Run `ng serve --open` for a dev server. (The app will automatically reload if yo
 
 ## Docker
 
-Run `docker build . -t myimage` for build, and then `docker-compose up`# pull-tweets-Angular-TwitterApi
+Run `docker build . -t myimage` for build, and then `docker-compose up`
 
